@@ -1,0 +1,25 @@
+@import "./variables";
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  background-color: $bg-color;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.converter-container {
+  background-color: #2a2a2a;
+  border-radius: 0.9375rem;
+  padding: 1.25rem;
+  box-shadow: 0.3125rem 0.3125rem 0.625rem $shadow-dark,
+    -0.3125rem -0.3125rem 0.625rem $shadow-light;
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
+  text-align: center;
+  overflow: auto;
+}
