@@ -2,9 +2,10 @@
 
 .converter-container {
   h1,
-  h2 {
-    color: #fff;
-    margin: 0.625rem 0;
+  h2,
+  h5 {
+    color: #d0cfcc;
+    margin: 0.8rem 0;
   }
 
   .form-label {
@@ -31,7 +32,7 @@
       background-color: #3a3a3a;
       border: none;
       border-radius: 0.625rem;
-      color: #fff;
+      color: #d0cfcc;
       padding: 0.625rem;
       width: 100%;
       height: 3rem;
@@ -73,7 +74,7 @@
     border: none;
     height: 0.0625rem;
     background: $shadow-light;
-    margin: 1.25rem 0;
+    margin: 2rem 0;
   }
 
   div:last-child {
@@ -82,13 +83,12 @@
   }
 
   .footer {
-    height: 30%;
     display: flex;
     align-items: center;
 
     h6 {
-      margin: 0 auto;
-      color: #fff;
+      margin: 1rem auto;
+      color: #d0cfcc;
       font-style: italic;
     }
   }

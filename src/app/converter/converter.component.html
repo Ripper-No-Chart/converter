@@ -38,10 +38,10 @@
         <ng-container *ngFor="let currency of currencies">
           <tr *ngIf="selectedCurrency !== currency">
             <td>
-              <h3>{{ currency }}:</h3>
+              <h5>{{ currency }}:</h5>
             </td>
             <td>
-              <h3>{{ conversionResults[currency] | number : "1.2-2" }}</h3>
+              <h5>{{ conversionResults[currency] | number : "1.2-2" }}</h5>
             </td>
           </tr>
         </ng-container>

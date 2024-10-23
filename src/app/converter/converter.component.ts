@@ -22,7 +22,7 @@ export class ConverterComponent {
     ARS: 1,
     MXN: 1,
   };
-  input: number = 0;
+  input: number = 1;
   currencies: Array<keyof conversion> = ['USD', 'ARS', 'MXN'];
   @ViewChild('amount') amount!: ElementRef<HTMLInputElement>;
 
