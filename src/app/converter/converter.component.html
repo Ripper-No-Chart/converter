@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="converter-container">
+    <h1>Converter</h1>
+
+    <table class="conversion-table">
+      <tbody>
+        <tr>
+          <td>
+            <label for="currency" class="form-label">Currency</label>
+            <select
+              id="currency"
+              [(ngModel)]="selectedCurrency"
+              (change)="setInputFocus(); resetValues()"
+              class="form-select"
+            >
+              <option
+                *ngFor="let currency of ['USD', 'ARS', 'MXN']"
+                [value]="currency"
+              >
+                {{ currency }}
+              </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="amount" class="form-label">Amount</label>
+            <input
+              #amount
+              type="number"
+              id="amount"
+              (keydown)="convertCurrency($event)"
+              [(ngModel)]="input"
+              class="form-control"
+              (focus)="setInputFocus()"
+              [disabled]="!selectedCurrency"
+            />
+          </td>
+        </tr>
+
+        <ng-container *ngFor="let currency of currencies">
+          <tr *ngIf="selectedCurrency !== currency">
+            <td>
+              <h3>{{ currency }}</h3>
+              <h2 class="currency-amount">
+                {{ conversionResults[currency] | number : "1.2-2" }}
+              </h2>
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <div class="footer">
+      <h6>RipperNoChart - 2024</h6>
+    </div>
+  </div>
+</div>

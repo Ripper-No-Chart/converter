@@ -1,0 +1,73 @@
+@import "./variables";
+
+.converter-container {
+  h1,
+  h2,
+  h3 {
+    color: $label-font-color;
+    margin: 0.8rem;
+    padding-top: 0.5rem;
+    text-shadow: 0.1rem 0.1rem 0 $shadow-light;
+  }
+
+  h1 {
+    margin: 1rem;
+    padding-top: 2rem;
+  }
+
+  .form-label {
+    font-weight: 600;
+    color: $label-font-color;
+  }
+
+  .conversion-table {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .currency-amount {
+      font-weight: bold;
+      color: $active-font-color;
+    }
+
+    td {
+      padding: 0.4rem;
+    }
+
+    .form-select,
+    .form-control {
+      background-color: $bg-color;
+      border-color: $shadow-light;
+      color: $active-font-color;
+      width: 100%;
+      height: 3rem;
+      text-align: center;
+    }
+  }
+
+  hr {
+    border: none;
+    height: 0.0625rem;
+    background: $shadow-light;
+    margin: 2rem 0;
+  }
+
+  div:last-child {
+    color: $bg-color;
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+
+    h6 {
+      margin: 0 auto;
+      color: $label-font-color;
+      font-style: italic;
+    }
+  }
+}
